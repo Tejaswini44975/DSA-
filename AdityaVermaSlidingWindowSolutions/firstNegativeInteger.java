@@ -36,4 +36,17 @@ class Compute {
         return ansArray;
     
     }
+    public static void main(String[] args) {
+        Compute compute = new Compute();
+        
+        long[] A = {-8, 2, 3, -6, 10};
+        int N = A.length;
+        int K = 2;
+
+        long[] result = compute.printFirstNegativeInteger(A, N, K);
+
+        for (long value : result)
+        {
+            System.out.print(value + " ");
+        }
 }
