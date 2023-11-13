@@ -18,4 +18,21 @@ class Solution{
 
         return min;
     }
+    public static void main(String[] args)
+    {
+        int K = 3;
+        ArrayList<Integer> Arr = new ArrayList<>();
+        Arr.add(1);
+        Arr.add(4);
+        Arr.add(2);
+        Arr.add(10);
+        Arr.add(2);
+        int N = Arr.size();
+
+
+        long result = Solution.minimumSumSubarray(K, Arr, N);
+
+        System.out.println(result);
+    }
+
 }
