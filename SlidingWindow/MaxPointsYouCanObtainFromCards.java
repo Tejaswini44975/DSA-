@@ -15,4 +15,15 @@ class Solution
         }
         return best;
     }
+    public static void main(String[] args) 
+    {
+        Solution s = new Solution();
+
+        int[] cardPoints = {1, 2, 3, 4, 5, 6, 1};
+        int k = 3;
+
+        int result = s.maxScore(cardPoints, k);
+
+        System.out.println(result);
+    }
 }
