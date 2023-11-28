@@ -45,4 +45,11 @@ class Solution
      
         return finalvalue;
     }
+     public static void main(String args[])
+    {
+        int n = 3, weight = 50;
+        Item arr[] = {new Item (100,20),new Item(60,10),new Item(120,30)};
+        double ans = fractionalKnapsack(weight, arr, n);
+        System.out.println("The maximum value is "+ans);
+    }
 }
