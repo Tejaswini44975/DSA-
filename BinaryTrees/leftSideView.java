@@ -15,13 +15,13 @@
  */
 class Solution
  {
-    public List<Integer> rightSideView(TreeNode root)
+    public List<Integer> leftSideView(TreeNode root)
     {
         List<Integer> result = new ArrayList<>();
-        rightView(root,result,0);
+        leftView(root,result,0);
         return result;
     }
-    public void rightView(TreeNode curr, List<Integer> result, int currDepth)
+    public void leftView(TreeNode curr, List<Integer> result, int currDepth)
     {
         if(curr==null)
         {
@@ -31,7 +31,7 @@ class Solution
         {
             result.add(curr.val);
         }
-        rightView(curr.right,result,currDepth+1);
-        rightView(curr.left,result,currDepth+1);
+        leftView(curr.left,result,currDepth+1);
+        leftView(curr.right,result,currDepth+1);
     }
 }
