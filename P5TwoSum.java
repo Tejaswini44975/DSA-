@@ -15,4 +15,17 @@ class Solution {
         return null;
         
     }
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] nums = {2, 7, 11, 15};
+        int target = 9;
+        int[] result = solution.twoSum(nums, target);
+
+        if (result != null) {
+            System.out.println("Indices with the sum: " + result[0] + ", " + result[1]);
+        } else {
+            System.out.println("No solution found.");
+        }
+    }
 }
