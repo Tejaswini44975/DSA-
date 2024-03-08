@@ -16,13 +16,12 @@ class Solution
 {
     void deleteNode(Node del)
     {
-         Node prev=null;
-         while(del.next!=null)
+         if(del.next==null)
          {
-             del.data=del.next.data;
-             prev=del;
-             del=del.next;
+             return;
          }
-         prev.next=null;
+             Node nextNode=del.next;
+             del.data=nextNode.data;
+             del.next=nextNode.next;
     }
 }
