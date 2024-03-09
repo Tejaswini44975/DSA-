@@ -76,3 +76,20 @@ public class Solution {
         return count;
     }
 }
+
+public class Solution
+{
+    public static int searchInLinkedList(Node head, int k)
+    {
+           Node temp=head;
+           while(temp!=null)
+           {
+           if(k==temp.data)
+           {
+               return 1;
+           }
+           temp=temp.next;
+           }
+           return 0;
+    }
+}
