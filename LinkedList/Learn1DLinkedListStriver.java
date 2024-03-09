@@ -45,3 +45,21 @@ public class Solution
         return node;
     }
 }
+
+//Delete Last Node Of Linked List
+
+public class Solution {
+    public static Node deleteLast(Node list){
+       if(list==null || list.next==null)
+       {
+           return null;
+       } 
+       Node temp=list;
+       while(temp.next.next!=null)
+       {
+           temp=temp.next;
+       }
+        temp.next=null;
+        return list;
+    }
+}
