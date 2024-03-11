@@ -50,3 +50,24 @@ public class Solution
     }
 }
 
+public class Solution
+{
+    public static Node deleteLastNode(Node head) {
+        if(head==null || head.next==null)
+        {
+            return null;
+        }
+        Node temp=head;
+        while(temp.next!=null)
+        {
+            temp=temp.next;
+        }
+        Node newTail=temp.prev;
+        newTail.next=null;
+        temp.prev=null;
+        return head;
+    }
+}
+
+
+
